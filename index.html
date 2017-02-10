@@ -1,61 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Stack Exchange OSS</title>
+        <title>Stack Overflow OSS</title>
         <link href="content/Styles.css" rel="stylesheet" type="text/css" />
-        <link href="content/img/apple-touch-icon.png" rel="apple-touch-icon" />
     </head>
     <body>
-        <div class="intro">
-            <div class="wrapper">
-                <a href="http://stackexchange.com" class="logo">Stack Exchange</a>
-            </div>
-        </div>
-        <div class="content">
-            <div class="wrapper">
-                <div class="col2">
-                    <img src="content/img/se-stats.png" alt="Look a gear!" />
+        <header>
+            <div class="inner-header">
+                <svg class="logo" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+                    <polygon fill="#BCBBBB" points="84.4,93.8 84.4,70.6 92.1,70.6 92.1,101.5 22.6,101.5 22.6,70.6 30.3,70.6 30.3,93.8 "/>
+                    <path fill="#F48023" d="M38.8,68.4l37.8,7.9l1.6-7.6l-37.8-7.9L38.8,68.4z M43.8,50.4l35,16.3l3.2-7l-35-16.4L43.8,50.4z M53.5,33.2l29.7,24.7l4.9-5.9L58.4,27.3L53.5,33.2z M72.7,14.9l-6.2,4.6l23,31l6.2-4.6L72.7,14.9z M38,86h38.6v-7.7H38V86z"/>
+                </svg>
+                <div>
+                    Stack Overflow Open Source
                 </div>
-                <div class="col2 linksection">
-                    <div id="login">
-                        <h2>Stack Exchange Open Source</h2>
-                        <div>
-                            <ul>
-                                <li class="section-title">Git Repos:
-                                    <ul>
-                                        <li><a href="https://github.com/StackExchange/dapper-dot-net">Dapper</a></li>
-                                        <li><a href="https://github.com/MiniProfiler">MiniProfiler</a></li>
-                                        <li><a href="https://github.com/NickCraver/StackExchange.Exceptional">Exceptional</a></li>
-                                        <li><a href="https://github.com/kevin-montrose/sigil">Sigil</a></li>
-                                        <li><a href="https://github.com/kevin-montrose/Jil">Jil</a></li>
-                                        <li><a href="https://github.com/opserver/Opserver">Opserver</a></li>
-                                        <li><a href="http://bosun.org/">Bosun</a></li>
-                                        <li><a href="https://github.com/StackExchange/blackbox">BlackBox</a></li>
-                                        <li><a href="https://github.com/StackExchange/StackExchange.DataExplorer">Data Explorer</a></li>
-                                        <li><a href="https://github.com/StackExchange/StackExchange.Redis">StackExchange.Redis</a></li>
-                                        <li><a href="https://github.com/StackExchange/StackID">StackID</a></li>
-                                        <li><a href="https://github.com/StackExchange/pagedown">PageDown</a></li>
-                                        <li><a href="https://github.com/StackExchange/StackExchange.Precompilation">StackExchange.Precompilation</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li class="section-title">Hg Repos:
-                                    <ul>
-                                        <li><a href="http://code.google.com/p/markdownsharp/">MarkdownSharp</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+            </div>
+        </header>
+        <div class="content">
+            <section class="column">
+                <h2>Projects</h2>
+                
+                <div class="project">
+                    <a href="https://bosun.org">Bosun</a>
+                    <div class="description">
+                        An open-source, MIT licensed, monitoring and alerting system by Stack Exchange
                     </div>
-               </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="wrapper">
-                <p>This site is for hosting git-based open-source projects initially started by Stack Exchange.</p>
-                <p style="margin-bottom: 0;">site design / logo &copy; 2014 stack exchange inc</p>
-            </div>
+                    <div class="tags">
+                        <a class="lang-go" href="https://github.com/bosun-monitor/bosun">Go</a>
+                    </div>
+                    <div class="links">
+                        <a class="docs" href="https://bosun.org/quickstart">Quick Start</a>
+                    </div>
+                </div>
+                                    
+                <div class="project">
+                    <a href="https://github.com/StackExchange/StackExchange.DataExplorer">Data Explorer</a>
+                    <div class="description">
+                        An open source tool for running arbitrary queries against a SQL data source from the web
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/StackExchange/StackExchange.DataExplorer">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="link" href="https://data.stackexchange.com/">SEDE</a>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <a href="https://github.com/opserver/Opserver">Opserver</a>
+                    <div class="description">
+                        .NET-based Monitoring for SQL Server, Redis, Elastic, HAProxy, etc.
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/opserver/Opserver">.NET</a>
+                    </div>
+                </div>
+                                                        
+                <div class="project">
+                    <a href="https://github.com/StackExchange/StackID">StackID</a>
+                    <div class="description">
+                        An OpenID provider implemented for the Stack Exchange network, built on top of dotNetOpenAuth
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/StackExchange/StackID">.NET</a>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <a href="https://github.com/StackExchange/blackbox">BlackBox</a>
+                    <div class="description">
+                        Safely store secrets in Git/Mercurial/Subversion
+                    </div>
+                    <div class="tags">
+                        <a class="lang-shell" href="https://github.com/StackExchange/blackbox">Shell</a>
+                    </div>
+                </div>
+            </section>
+            <section class="column">
+                <h2>Libraries</h2>
+
+                <div class="project">
+                    <a href="https://github.com/StackExchange/Dapper">Dapper</a>
+                    <div class="description">
+                        A high performance Micro-ORM supporting SQL Server, MySQL, Sqlite, SqlCE, Firebird, etc.
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/StackExchange/Dapper">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/Dapper">NuGet</a>
+                        <a class="nuget" href="https://www.nuget.org/packages/Dapper.Contrib">NuGet (Contrib)</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/MiniProfiler">MiniProfiler</a>
+                    <div class="description">
+                        A simple but effective mini-profiler for .NET, Ruby, Go, and Node
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/MiniProfiler/dotnet">.NET</a>
+                        <a class="lang-ruby" href="https://github.com/MiniProfiler/rack-mini-profiler">Ruby</a>
+                        <a class="lang-go" href="https://github.com/MiniProfiler/go">Go</a>
+                        <a class="lang-node" href="https://github.com/MiniProfiler/node">Node</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/MiniProfiler/">NuGet</a>
+                        <a class="gem" href="https://rubygems.org/gems/rack-mini-profiler/versions/0.10.1">Gem</a>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <a href="https://github.com/kevin-montrose/Jil">Jil</a>
+                    <div class="description">
+                        Fast .NET JSON (De)Serializer, Built On Sigil
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/kevin-montrose/Jil">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/Jil/">NuGet</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/kevin-montrose/Sigil">Sigil</a>
+                    <div class="description">
+                        A fail-fast validating helper for .NET CIL generation
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/kevin-montrose/Sigil">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/Sigil/">NuGet</a>
+                    </div>
+                </div>
+                                    
+                <div class="project">
+                    <a href="https://github.com/StackExchange/StackExchange.Redis">StackExchange.Redis</a>
+                    <div class="description">
+                        A high performance general purpose redis client for .NET languages
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/StackExchange/StackExchange.Redis">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/StackExchange.Redis/">NuGet</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/NickCraver/StackExchange.Exceptional">StackExchange.Exceptional</a>
+                    <div class="description">
+                        .NET exception logger to SQL, JSON, MySQL, etc.
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/NickCraver/StackExchange.Exceptional">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/StackExchange.Exceptional/">NuGet</a>
+                    </div>
+                </div>
+                                                        
+                <div class="project">
+                    <a href="https://github.com/StackExchange/StackExchange.Precompilation">StackExchange.Precompilation</a>
+                    <div class="description">
+                        An OpenID provider implemented for the Stack Exchange network, built on top of dotNetOpenAuth
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/StackExchange/StackExchange.Precompilation">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/StackExchange.Precompilation/">NuGet</a>
+                        <a class="nuget" href="https://www.nuget.org/packages/StackExchange.Precompilation.Build/">NuGet (Build)</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <a href="https://code.google.com/p/markdownsharp/">MarkdownSharp</a>
+                    <div class="description">
+                        The Markdown editor and converter used on Stack Overflow and the other Stack Exchange sites
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://code.google.com/p/markdownsharp/">.NET</a>
+                    </div>
+                    <div class="links">
+                        <a class="nuget" href="https://www.nuget.org/packages/MarkdownSharp/">NuGet</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/StackExchange/StackID">PageDown</a>
+                    <div class="description">
+                        The Markdown editor and converter used on Stack Overflow and the other Stack Exchange sites
+                    </div>
+                    <div class="tags">
+                        <a class="lang-dotnet" href="https://github.com/StackExchange/pagedown">.NET</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </body>
 </html>
