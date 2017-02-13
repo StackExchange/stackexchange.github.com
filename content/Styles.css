@@ -46,8 +46,7 @@ body > header div {
 }
 
 section.column {
-    width: 530px;
-    float: left;
+    overflow: auto;
 }
 
 section h2 {
@@ -55,20 +54,28 @@ section h2 {
 }
 
 .project {
-    width: 500px;
-    border: solid 1px #fafafb;
+    width: 330px;
+    border: solid 1px #eff0f1;    
     box-shadow: 0 1px 3px rgba(12,13,14,0.1), 0 4px 20px rgba(12,13,14,0.035), 0 1px 0 rgba(12,13,14,0.1), 0 1px 1px rgba(12,13,14,0.025);
-    margin-bottom: 10px;
+    margin: 0 20px 10px 0;
+    float: left;
+    min-height: 130px;
+    position: relative;
 }
 .project > a {
-    background: #fafafb;
-    color: #001e33;
+    background: #eff0f1;
+    color: rgba(0, 0, 0, 0.7);
     display: block;    
     height: 25px;
     line-height: 25px;
     padding: 4px;
     font-size: 0.95em;
     font-weight: bold;
+}
+.project .icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
 }
 .project .description {
     font-size: 0.9em;
@@ -77,12 +84,14 @@ section h2 {
 
 .project .tags {
     padding: 4px;
+    position: absolute;
+    bottom: 0;
 }
 .project .tags a {
-    font-size: 0.8em;
+    font-size: 12px;
     display: inline-block;
     padding: 0 8px;
-    border-radius: 20px;
+    border-radius: 4px;
     height: 18px;
     line-height: 19px;
     color: #fff;
